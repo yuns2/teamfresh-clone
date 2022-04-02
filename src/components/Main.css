@@ -1,0 +1,239 @@
+.section-line { /*section 구분선*/
+    width: 100%;
+    height: 1px;
+    margin: 2rem 1rem;
+    background-color: rgb(238, 238, 238);
+}
+
+.jumbotron {
+    background-color: rgb(23, 45, 76);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    padding: 5vw
+}
+
+.jumbotron h3 { 
+    padding: 1.4rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/*bussiness*/
+.bussiness{ 
+    padding: 4vh 5vw 10vh;
+}
+
+.bussiness__title-box {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8vh;
+}
+
+.bussiness__title-box h2 {
+    padding: 1.8rem;
+    color: rgb(52, 54, 56);
+    font-size: 2rem;
+}
+
+.bussiness__title-box hr {
+    width: 70%;
+    height: 1.2px;
+    border: 0;
+    background-color: #b4b4b4;
+}
+
+.bussiness__content-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bussiness__content {
+    width: 25%;
+    padding: 15px; 
+}
+
+.bussiness__content__img-box{ width: 100%; }
+
+.bussiness__content__text-box { padding: 1.4rem; }
+
+.bussiness__content__text-box > p {
+    padding : 1rem 0;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.bussiness__content__text-box> a {
+    width: fit-content;
+    padding: 10px 15px;
+    border: 1px solid #6c757d;
+    border-radius : 2rem;
+    color: #6c757d;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.bussiness__content__text-box> a:hover {
+    color: white;
+    background-color: #6c757d;
+}
+
+.bussiness__content__text-box> a:focus {
+    box-shadow: 0 0 0 0.2rem rgb(108 117 125 / 50%)
+}
+
+/*board*/
+.board {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+.board__wrapper{
+    width: 95%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.board__wrapper > div {
+    width : 48%;
+    max-width: 50%;
+    
+}
+
+.board__title {
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.board__table {
+    padding: 2rem;
+    background: rgb(250, 250, 250);
+    border: 1px solid rgb(238, 238, 238);
+}
+.table_sub-title{
+    display: flex;
+    align-items: center;
+}
+.table_sub-title h5 { 
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.table__section-line {
+    margin: 1.2rem 0;
+    height: 1px;
+    background-color:rgb(238, 238, 238);
+}
+
+.table_list { width: 100%; }
+
+.table_list tr { height: 2.4rem; }
+
+/*connect*/
+.connect {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connect h2 {
+    font-weight: normal; 
+    font-size: 2rem; 
+}
+
+.connect__channels {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 20vw;
+    padding: 3rem 0;
+}
+
+.connect__channels > div {
+    width: 80px;
+    height: 80px;
+}
+
+.connect__channels > div > a {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.facebook a {
+    background-image : url("/src/src_assets/facebook_logo.png");
+}
+
+.facebook:hover a {
+    background-image : url("/src/src_assets/facebook_logo_gray.png");
+}
+
+.youtube a {
+    background-image : url("/src/src_assets/youtube_logo.png");
+}
+
+.youtube:hover a {
+    background-image : url("/src/src_assets/youtube_logo_gray.png");
+}
+
+
+@media all and (min-width:1024px) {}
+
+@media all and (min-width:768px) and (max-width:1023px) {
+    .board__wrapper {
+        width: auto;
+        padding: 3rem;
+        flex-wrap: wrap;
+    }
+    .board__wrapper > div {
+        width: 100%;
+        max-width: 100%;
+    }
+    .board__news {
+        padding-top: 2rem;
+    }
+    .bussiness__content-box { flex-direction: column; }
+    .bussiness__content { 
+        width: 100%;
+        padding: 0; 
+    }
+    .bussiness__content__text-box > p,
+    .bussiness__content__text-box> a {
+        font-size: .7rem;
+        line-height: 1.4;
+    }
+}
+
+@media all and (max-width:767px) {
+    .bussiness__content-box { flex-direction: column; }
+    .bussiness__content {
+        width: 100%;
+        padding: 0;
+    }
+    .board__wrapper {
+        flex-direction: column;
+    }
+    .board__wrapper > div {
+        width: 100%;
+        max-width: 100%;
+    }
+    .board__news {
+        padding-top : 2rem;
+    }
+}

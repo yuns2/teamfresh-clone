@@ -1,0 +1,121 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.modal button {
+    outline: none;
+    cursor: pointer;
+    border: 0;
+}
+.modal > section {
+    width: 90%;
+    max-width: 310px;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    animation: modal-show 0.3s;
+    overflow: hidden;
+}
+.modal > section > header {
+    position: relative;
+    padding: 16px 64px 16px 16px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #6c757d;
+}
+.modal > section > header button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #999;
+    background-color: transparent;
+}
+.modal > section > main {
+    padding: 16px;
+    border-bottom: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
+}
+.modal > section > footer {
+    padding: 12px 16px;
+    text-align: right;
+}
+.modal > section > footer button {
+    padding: 6px 12px;
+    color: #fff;
+    background-color: #0acf97;
+    border-color: #0acf97;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.modal.openModal {
+    display: flex;
+    align-items: center;
+    animation: modal-bg-show 0.3s;
+}
+
+@keyframes modal-show {
+    from {
+        opacity: 0;
+        margin-top: -50px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes modal-bg-show {
+    from {
+        opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+
+/* modal - content */
+
+.modal_content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal_img-wrapper {
+    width: 90px; 
+    height: 90px;
+}
+
+.modal_content-box h1 {
+    font-size: 22px;
+    color: #404040;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.modal_content-box p {
+    text-align: center; 
+    line-height:1.6;
+}
+
+.modal_content-box .content__main {
+    text-align: center;
+    font-size: 15px;
+    color: #606060;
+}
+
+.modal_content-box .content__caution {
+    margin-bottom: 15px;
+    color: #e22020;
+    font-size: 14px;
+}

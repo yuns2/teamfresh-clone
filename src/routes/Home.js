@@ -1,9 +1,11 @@
 import React from "react";
-
+import Main from "../components/Main.js";
 class Home extends React.Component {
     render () {
         return (
-            <p>Home</p>
+            <div>
+                <Main />
+            </div>
         )
     }
 }

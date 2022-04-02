@@ -1,0 +1,69 @@
+.addr-form__section-line {
+    width: 100%;
+    height: 2px;
+    background: rgb(2, 32, 74);
+}
+
+.addr-form__wrapper {
+    width: 420px;
+    padding: 20px 10px;
+    background: white;
+    border: 1px solid #ccc;
+}
+.addr-form__top-box {
+    display:flex;
+    align-items: center;
+    padding: 15px;
+    color: #6c757d; 
+}
+
+.addr-form__top-box h3 { margin-left:10px; }
+
+.addr-form {
+    display : flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.addr-form input {
+    width: 390px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border: 1px solid #02204a;
+    line-height: 40px;
+}
+
+.addr-form button {
+    width: 400px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    background-color: #02204a;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+}
+
+.addr-form__notice {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 30px auto 0;
+    padding: 20px 10px;
+    background-color: #e5e8ef;
+}
+
+.notice__notice strong {
+    color: red;
+    font-size: 16px;
+}
+
+.addr-form__notice p {
+    padding : 1.5rem 0;
+    color: #98a6ad;
+    font-size: 14px; 
+    line-height:1.8;
+}

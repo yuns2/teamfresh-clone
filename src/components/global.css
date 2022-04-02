@@ -1,0 +1,12 @@
+* { padding: 0; margin: 0; }
+
+a { 
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+li { list-style: none; }
+
+img { width: 100%;}
+hr { border: 0; }
